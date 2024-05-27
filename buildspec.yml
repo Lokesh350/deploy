@@ -3,10 +3,10 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18.15.0 # Example of specifying a runtime version
+      nodejs: 18.19.1 # Example of specifying a runtime version
     commands:
       - echo Installing dependencies
-      - apt install nodejs -y
+      - #apt install nodejs -y
 
 
   pre_build:
