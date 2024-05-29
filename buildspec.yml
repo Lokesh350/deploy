@@ -12,6 +12,7 @@ phases:
   pre_build:
     commands:
       - echo Pre-build phase
+      - rm -rf node_modules
       - npm install
 
   build:
