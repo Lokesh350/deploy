@@ -4,10 +4,11 @@ phases:
   install:
     runtime-versions:
       nodejs: 18.20.3
-      npm: 10.7.0
     commands:
       - echo Using Node.js 18.20.3 and npm 10.7.0
       - node -v
+      - npm -v
+      - npm install -g npm@10.7.0
       - npm -v
 
 
