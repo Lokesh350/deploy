@@ -4,6 +4,7 @@
 cd /var/www/myapp
 
 # Install dependencies
+rm -rf node_modules
 
 # Start the npm application
 #npm install
