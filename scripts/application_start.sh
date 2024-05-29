@@ -4,10 +4,10 @@
 echo "Starting the application..."
 
 # Navigate to the application directory
-cd /var/www/myapp
+cd /var/www/myapp/build
 
 # Start the application
-/usr/bin/npm start 
+npm start 
 
 # Print a message indicating that the application has started
 echo "Application started successfully."
