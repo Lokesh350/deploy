@@ -8,9 +8,6 @@ phases:
       - echo Using Node.js 18.20.3 and npm 10.7.0
       - node -v
       - npm -v
-      - npm install -g npm@10.7.0
-      - npm -v
-
 
   pre_build:
     commands:
