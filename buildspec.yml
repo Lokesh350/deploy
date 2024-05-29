@@ -9,20 +9,21 @@ phases:
       - sudo apt install -y curl software-properties-common
       - curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
       - sudo apt install -y nodejs
+      - sudo npm install -g npm@10.7.0
       - npm -v
       - node -v
-      - npm install
 
 
   pre_build:
     commands:
       - echo Pre-build phase
-      - npm run build
+      - npm install
 
   build:
     commands:
       - echo Build phase
       - echo Performing build operations
+      - npm run build
       # Add your build commands here
 
   post_build:
