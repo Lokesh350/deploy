@@ -5,10 +5,10 @@ phases:
     commands:
       - echo Installing dependencies
       - #apt install nodejs -y
-      - sudo yum update -y
-      - sudo yum install -y curl software-properties-common
+      - sudo apt update -y
+      - sudo apt install -y curl software-properties-common
       - curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-      - sudo yum install -y nodejs
+      - sudo apt install -y nodejs
       - npm -v
       - node -v
       - npm install
