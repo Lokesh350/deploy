@@ -2,11 +2,13 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 18.19.1 # Example of specifying a runtime version
     commands:
       - echo Installing dependencies
       - #apt install nodejs -y
+      - sudo apt update
+      - sudo apt install -y curl software-properties-common
+      - curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+      - sudo apt install -y nodejs
       - npm install
 
 
