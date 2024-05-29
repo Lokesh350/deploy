@@ -3,19 +3,15 @@ os: linux
 files:
   - source: /
     destination: /var/www/myapp
-permissions:
-  - object: /var/www/myapp
-    pattern: "**"
-    owner: ubuntu
-    group: ubuntu
-    mode: 755
-    type:
-      - file
-      - directory
 
 hooks:
-   AfterInstall:
+  
+  AfterInstall:
     - location: scripts/after_install.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
 
+  ApplicationStart:
+    - location: scripts/application_start.sh
+      timeout: 300
+      runas: root
