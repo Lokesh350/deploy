@@ -1,0 +1,10 @@
+Developer
+   |
+   v                        (build spec)
+GitHub -- (Webhook) --> AWS CodeBuild --> s3
+                          |
+                          v
+                   AWS CodeCommit(app spec)
+                          |
+                          v
+                      AWS EC2 Instance(code deployment agent)
